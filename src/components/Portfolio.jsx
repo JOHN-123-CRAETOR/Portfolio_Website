@@ -27,7 +27,7 @@ export default function Portfolio() {
         <motion.h2
           initial={{ y: -50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.5 }}
           transition={{ type: 'spring', stiffness: 120 }}
           className="display-4 mb-3 text-white"
         >
@@ -36,7 +36,7 @@ export default function Portfolio() {
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.5 }}
           transition={{ delay: 0.3 }}
           className="lead mb-4 text-white"
         >
@@ -56,7 +56,7 @@ export default function Portfolio() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.6 }}
           className="card shadow mb-4"
           style={{ borderTop: '5px solid #7c68ebff' }}
@@ -86,7 +86,7 @@ export default function Portfolio() {
               className="col-md-6"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: false, amount: 0.3 }}
               transition={{ duration: 0.6 }}
             >
               <motion.div
@@ -117,7 +117,7 @@ export default function Portfolio() {
           style={{ borderTop: '5px solid #6a11cb', background: '#f0f4ff' }}
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.6 }}
         >
           <div className="card-body">
