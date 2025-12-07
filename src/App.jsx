@@ -1,13 +1,30 @@
-import Portfolio from './components/Portfolio.jsx';
-import './App.css'
+import Portfolio from "./components/Portfolio";
+import Navbar from './components/Navbar';
+import About from "./components/About";
+import Contact from './components/Contact';
+import Projects from './components/Projects';
+import { Routes, Route } from "react-router-dom";
 
-function App() {
 
+
+
+export default function App() {
+
+
+  
   return (
-    <>
-     <Portfolio/>
-    </>
-  )
-}
+    <div>
+      <Navbar />
 
-export default App
+    <Routes>
+      <Route path="/" element={<Portfolio />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />}/>
+      <Route path="/projects" element={<Projects/>}/>
+
+    </Routes>
+
+    </div>
+
+  );
+}
