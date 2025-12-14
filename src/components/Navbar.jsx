@@ -1,5 +1,6 @@
 import My_Logo from "../assets/My_Logo.png";
 import { Link } from "react-router-dom";
+import {motion} from "framer-motion"
 
 function Navbar() {
   return (
@@ -24,26 +25,58 @@ function Navbar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
+              <motion.li className="nav-item"
+                  whileHover={{
+                          backgroundColor: "#a883b8ff",
+                          border: "1px solid black",
+                          borderRadius: "5px",
+                          padding: "5px 15px",
+                          color: "green"
+                  }}>
                 <Link className="nav-link text-primary" to="/">
                   Home
                 </Link>
-              </li>
-              <li className="nav-item">
+              </motion.li>
+              <motion.li className="nav-item"
+                whileHover={{
+                          backgroundColor: "#a883b8ff",
+                          border: "1px solid black",
+                          borderRadius: "5px",
+                          padding: "5px 15px",
+                          color: "2px solid black"
+                  }}>
                 <Link className="nav-link text-primary" to="/about">
                   About
                 </Link>
-              </li>
-              <li className="nav-item">
+              </motion.li>
+              <motion.li className="nav-item"
+                style={{color: "black",
+                }}
+
+                whileHover={{
+                          backgroundColor: "#a883b8ff",
+                          border: "1px solid black",
+                          borderRadius: "5px",
+                          padding: "5px 15px",
+                          color: "2px solid black"
+                  }}>
                 <Link className="nav-link text-primary" to="/projects">
                   Projects
                 </Link>
-              </li>
-              <li className="nav-item">
+              </motion.li>
+              <motion.li className="nav-item"
+
+              whileHover={{
+                          backgroundColor: "#a883b8ff",
+                          border: "1px solid black",
+                          borderRadius: "5px",
+                          padding: "5px 15px",
+                          color: "2px solid black"
+                  }}>
                 <Link className="nav-link text-primary" to="/contact">
                   Contact
                 </Link>
-              </li>
+              </motion.li>
             </ul>
           </div>
         </div>

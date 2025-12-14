@@ -16,8 +16,9 @@ function About() {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: false, amount: 0.5 }}
           transition={{ type: "spring", stiffness: 50, damping: 4 }}
+          className="text-white"
         >
-          <h1 className="text-white">ABOUT</h1>
+          ABOUT
         </motion.h1>
       </section>
 
@@ -130,6 +131,104 @@ function About() {
             </motion.div>
           </div>
         )}
+      </section>
+      <section className="">
+        <div
+        style={{display: "flex",
+                justifyContent: "center",
+                flexWrap: "wrap",
+                gap: "20px",
+                
+              }}>
+           <motion.div
+              className="card shadow p-4"
+              style={{
+                borderLeft: "5px solid #ad76ebff",
+                borderRight: "5px solid #ad76ebff",
+                maxWidth: "600px",
+              }}
+              initial={{opacity: 0, y: 40, scale:0.9}}
+              animate={{opacity: 1, y: 0, scale: 1}}
+              transition={{duration: 0.9}}
+              whileHover={{scale: 1.03}}>
+                <motion.h3 className="card-title text-center"
+                initial={{opacity: 0, y: -100}}
+                whileInView={{opacity: 1, y: 0}}
+                transition={{type: "spring", stifness: 100, damping: 30}}>My Educational Background</motion.h3>
+                <motion.div
+                 initial={{opacity: 0, x: -100}}
+                  whileInView={{opacity: 1, x: 0}}
+                  transition={{type: "spring", stiffness: 100, damping: 30}}>
+                    <h5 className="">Senior High</h5>
+                    <p className="card-text">  I attended Tema Methodist Day Senior High School, where I built a strong academic
+                        foundation and developed essential values such as discipline, teamwork, and
+                        responsibility. My time in senior high school helped shape my character and
+                        sparked my interest in learning, problem-solving, and personal growth.
+                                      </p>
+                </motion.div>
+                
+                        <br />
+                        <motion.div
+                        initial={{opacity: 0, x: 100}}
+                        whileInView={{opacity: 1, x: 0}}
+                        transition={{type: "spring", stiffness: 100, damping: 30}}>
+                            <h5>University</h5>
+                            <p>
+                            I am currently studying at the University of Ghana (UG), where I am further
+                            developing my academic and technical skills. At UG, I am exposed to a diverse and
+                            intellectually stimulating environment that encourages critical thinking,
+                            creativity, and innovation. My university experience is helping me grow both
+                            academically and personally, while strengthening my passion for technology and
+                            preparing me for future professional opportunities.
+                          </p>
+                        </motion.div>       
+                </motion.div>
+                <motion.div
+              className="card shadow p-4"
+              style={{
+                borderLeft: "5px solid #ad76ebff",
+                borderRight: "5px solid #ad76ebff",
+                maxWidth: "600px",
+              }}
+              initial={{opacity: 0, y: 40, scale:0.9}}
+              animate={{opacity: 1, y: 0, scale: 1}}
+              transition={{duration: 0.9}}
+              whileHover={{scale: 1.03}}>
+                <motion.h3 className="card-title text-center"
+                initial={{opacity: 0, y: -100}}
+                whileInView={{opacity: 1, y: 0}}
+                transition={{type: "spring", stifness: 100, damping: 30}}>My Educational Background</motion.h3>
+                <motion.div
+                 initial={{opacity: 0, x: -100}}
+                  whileInView={{opacity: 1, x: 0}}
+                  transition={{type: "spring", stiffness: 100, damping: 30}}>
+                    <h5 className="">Senior High</h5>
+                    <p className="card-text">  I attended Tema Methodist Day Senior High School, where I built a strong academic
+                        foundation and developed essential values such as discipline, teamwork, and
+                        responsibility. My time in senior high school helped shape my character and
+                        sparked my interest in learning, problem-solving, and personal growth.
+                                      </p>
+                </motion.div>
+                
+                        <br />
+                        <motion.div
+                        initial={{opacity: 0, x: 100}}
+                        whileInView={{opacity: 1, x: 0}}
+                        transition={{type: "spring", stiffness: 100, damping: 30}}>
+                            <h5>University</h5>
+                            <p>
+                            I am currently studying at the University of Ghana (UG), where I am further
+                            developing my academic and technical skills. At UG, I am exposed to a diverse and
+                            intellectually stimulating environment that encourages critical thinking,
+                            creativity, and innovation. My university experience is helping me grow both
+                            academically and personally, while strengthening my passion for technology and
+                            preparing me for future professional opportunities.
+                          </p>
+                        </motion.div>       
+                </motion.div>
+
+
+        </div>
       </section>
     </div>
   );

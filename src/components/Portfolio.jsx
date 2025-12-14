@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 export default function Portfolio() {
   const email = "Boatwan123@gmail.com";
   const phone = "0246512206";
+  const waPhone = "+233246512206";
 
   return (
     <div>
@@ -148,7 +149,7 @@ export default function Portfolio() {
                 boxShadow: "0px 10px 25px rgba(0,0,0,0.5)",
               }}
               className="btn"
-              onClick={() => window.open(`https://wa.me/${phone}`, "_blank")}
+              onClick={() => window.open(`https://wa.me/${waPhone}`, "_blank")}
             >
               WhatsApp Me
             </motion.button>

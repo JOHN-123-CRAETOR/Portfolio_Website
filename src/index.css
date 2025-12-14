@@ -1,0 +1,12 @@
+.nav-hover {
+  transition: background-color 0.3s ease;
+  border-radius: 6px;
+}
+
+.nav-hover:hover {
+  background-color: black;
+}
+
+.nav-hover:hover .nav-link {
+  color: white !important;
+}
